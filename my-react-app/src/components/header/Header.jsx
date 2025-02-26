@@ -2,6 +2,6 @@ import './header.css'
 
 export default function Header() {
   return (
-    <div>Header</div>
+    <div>Barcelona 4 vs Atletico Madrid 4</div>
   )
 }
