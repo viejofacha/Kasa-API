@@ -1,0 +1,22 @@
+.navHome {
+  width: 309;
+  height: 34;
+  top: 17px;
+  left: 931px;
+  gap: 57px;
+}
+.navHomeTexto {
+  width: 136;
+height: 34;
+font-family: Montserrat;
+font-weight: 500;
+font-size: 24px;
+line-height: 34.22px;
+letter-spacing: 0%;
+text-align: right;
+text-decoration: underline;
+text-decoration-style: solid;
+text-underline-offset: Auto;
+text-decoration-thickness: Auto;
+background: #000000;
+}

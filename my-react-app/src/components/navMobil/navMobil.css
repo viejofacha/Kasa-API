@@ -1,0 +1,20 @@
+.navMobil {
+  width: 190;
+  height: 17;
+  gap: 26px;
+}
+.navMobilTexto {
+  width: 55;
+  height: 17;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17.11px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-underline-offset: Auto;
+  text-decoration-thickness: Auto;
+  background: #000000;
+}

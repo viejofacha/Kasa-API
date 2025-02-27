@@ -1,0 +1,29 @@
+.bannerMobil {
+  width: 335;
+  height: 111;
+  border-width: 1px;
+  border: 1px solid #000000;
+}
+.bannerMobilTexto {
+  width: 225;
+  height: 48;
+  top: 31px;
+  left: 16px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  background: #ffffff;
+}
+.bannerMobilImg {
+  width: 335;
+  height: 111;
+  opacity: 0.6;
+  border-radius: 10px;
+  border-width: 1px;
+  mix-blend-mode: Darken;
+  background: #000000;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}

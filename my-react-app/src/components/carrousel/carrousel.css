@@ -1,0 +1,22 @@
+.carrousel {
+  width: 1240;
+  height: 415;
+}
+.arrowRight {
+  width: 96;
+  height: 119.63;
+  top: 140.83px;
+  left: 1144px;
+}
+.arrowLeft {
+  width: 96;
+  height: 119.63;
+  top: 148.3px;
+}
+.slideIndicator {
+  width: 24;
+  height: 32.402400970458984;
+  top: 357.67px;
+  left: 607px;
+  background: #ffffff;
+}
