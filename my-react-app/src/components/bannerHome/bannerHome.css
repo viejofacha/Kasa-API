@@ -7,7 +7,7 @@
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-.bannerTexto {
+.h1 {
   width: 733;
   height: 68;
   top: 241px;
@@ -22,7 +22,7 @@
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-.bannerImg {
+.imgBanner {
   width: 1240;
   height: 223;
   top: 163px;
@@ -32,3 +32,14 @@
   mix-blend-mode: Darken;
   background: #000000;
 }
+.banner_background {
+  width: 1240;
+  height: 223;
+  opacity: 0.3;
+  top: 146px;
+  left: 100px;
+  border-radius: 25px;
+  mix-blend-mode: Darken;
+  background: #000000;
+}
+

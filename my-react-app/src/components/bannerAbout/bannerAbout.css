@@ -1,10 +1,10 @@
-.bannerMobil {
+.bannerAbout {
   width: 335;
   height: 111;
   border-width: 1px;
   border: 1px solid #000000;
 }
-.bannerMobilTexto {
+.h1 {
   width: 225;
   height: 48;
   top: 31px;
@@ -16,7 +16,7 @@
   letter-spacing: 0%;
   background: #ffffff;
 }
-.bannerMobilImg {
+.imgBannerAbout {
   width: 335;
   height: 111;
   opacity: 0.6;
@@ -26,4 +26,14 @@
   background: #000000;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px #00000040;
+}
+.banner_background {
+  width: 1240;
+  height: 223;
+  opacity: 0.3;
+  top: 146px;
+  left: 100px;
+  border-radius: 25px;
+  mix-blend-mode: Darken;
+  background: #000000;
 }

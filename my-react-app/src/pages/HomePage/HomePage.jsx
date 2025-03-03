@@ -1,11 +1,33 @@
-import "./home.css"
+import "../../pages/HomePage/homePage.css";
+import BannerHome from "../../components/bannerHome/BannerHome.jsx";
 
-export default function Home() {
+import Gallery from "../../components/logementGallery/LogementGallery.jsx";
+import {FicheLogement} from "../../pages/FicheLogement/FicheLogement.jsx";
 
-    // gérer la logique pour faire un appel api (fetch) pour récupérer les données
-    
-    // gérer la logique pour afficher les données
+/** EXPLICATION DU COMPOSANT "HomePage" :
+* C'est un composant qui affiche la page d'accueil du site.
+* 
+* @component
+* @example
+* return (
+*   <HomePage />
+* )
+*/
+function HomePage() {
+  /** RENDU DU COMPOSANT :
+  * Le rendu du composant comprend une bannière et une galerie de logements.
+  * Lorsque l'utilisateur clique sur un logement dans la galerie, il est dirigé vers la page de détails du logement.
+  * Le composant Gallery est rendu avec deux props : `path` et `element`.
+  * `path` est défini sur "logement/:id", ce qui est une indication pour la gestion des routes dans l'application.
+  * Il définit le chemin à suivre lorsqu'un élément de la galerie est cliqué, pour afficher les détails du logement.
+  * `element` est défini sur `<LogementPage />`, ce qui signifie que le composant LogementPage sera utilisé comme élément à afficher lorsque l'utilisateur cliquera sur un élément de la galerie.
+  */
   return (
-    <div className="home-container">Home</div>
-  )
+    <>
+      <BannerHome />
+      <Gallery path="logement/:id" element={<FicheLogement />} />
+    </>
+  );
 }
+
+export default HomePage;
