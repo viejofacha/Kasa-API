@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import classNames from "classnames";
+// import classNames from "classnames";
 import arrowForCollapse from "../../assets/arrowForCollapse.svg";
 
 /** EXPLICATION DU COMPOSANT "Collapse" :
@@ -14,7 +14,7 @@ import arrowForCollapse from "../../assets/arrowForCollapse.svg";
 *   </Collapse>
 * )
 * 
-* @param {Object} props - Les propriétés passées au composant.
+* 
 * @param {string} props.title - Le titre du panneau déroulant.
 * @param {React.Node} props.children - Le contenu du panneau déroulant.
 */
@@ -38,9 +38,9 @@ const Collapse = ({title, children}) => {
     * `collapseClass`, `arrowClass` et `paragraphClass` sont des chaînes de caractères qui représentent les classes CSS dynamiques.
     * Elles changent en fonction de l'état d'ouverture du panneau.
     */
-    const collapseClass = classNames("collapse", { "open": isOpen });
-    const arrowClass = classNames("arrow", { "down": isOpen });
-    const paragraphClass = classNames("paragraph", { "animate": isOpen });
+    const collapseClass = ("collapse", { "open": isOpen });
+    const arrowClass = ("arrow", { "down": isOpen });
+    const paragraphClass = ("paragraph", { "animate": isOpen });
 
     /** RENDU DU COMPOSANT :
     * Le rendu du composant comprend un titre, une flèche pour ouvrir/fermer le panneau, et le contenu du panneau.
@@ -77,4 +77,4 @@ Collapse.propTypes = {
     description : PropTypes.node,
 };
 
-export default {Collapse};
+export default Collapse;

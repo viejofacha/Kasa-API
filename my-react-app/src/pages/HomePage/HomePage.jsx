@@ -1,8 +1,6 @@
 import "../../pages/HomePage/homePage.css";
 import BannerHome from "../../components/bannerHome/BannerHome.jsx";
 
-import Gallery from "../../components/logementGallery/LogementGallery.jsx";
-import {FicheLogement} from "../../pages/FicheLogement/FicheLogement.jsx";
 
 /** EXPLICATION DU COMPOSANT "HomePage" :
 * C'est un composant qui affiche la page d'accueil du site.
@@ -25,7 +23,7 @@ function HomePage() {
   return (
     <>
       <BannerHome />
-      <Gallery path="logement/:id" element={<FicheLogement />} />
+      
     </>
   );
 }
