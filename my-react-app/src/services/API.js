@@ -20,7 +20,7 @@ if (!window.fetch) {
     */
     async function logementsGetAll() {
         try {
-            const response = await fetch("logements.json");
+            const response = await fetch("data.json");
             return response.json();
         } catch (error) {
             console.error(error);
@@ -28,7 +28,7 @@ if (!window.fetch) {
     }
     export { logementsGetAll };
 
-
+    
 /*=============== GET BY ID ===============*/
     /** logementGetById :
     * C'est une fonction qui récupère un logement spécifique de l'API en utilisant son ID.
@@ -40,7 +40,7 @@ if (!window.fetch) {
     */
     async function logementGetById(id) {
         try {
-            const response = await fetch("logements.json");
+            const response = await fetch("data.json");
             const logs = await response.json();
             return logs.find((log) => log.id === id);
         } catch (error) {
@@ -48,3 +48,4 @@ if (!window.fetch) {
         }
     }
     export { logementGetById };
+    

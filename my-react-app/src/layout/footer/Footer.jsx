@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import LogoFooter from "../../assets/logofo (1).svg";
-
+import "../../layout/footer/footer.css"
 /** EXPLICATION DU COMPOSANT "Footer" :
 * C'est un composant qui affiche le pied de page du site.
 * 

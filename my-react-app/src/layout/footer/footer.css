@@ -1,16 +1,35 @@
-@import '../../utils/variables.scss';
-
 .footer {
-    background-color: Footer-color;
-    color: Text-color;
-    padding: 3rem;
-    margin: 0 auto;
-    max-width: 1440px;
-    min-height: 100px;
-    display: grid;
-    text-align: center;
-    place-items: center;
-    &__img {
-        margin-bottom: 1rem;
-    }
+  display: flex;
+  width: 1440;
+  height: 209;
+  background: #000000;
+  color: Text-color;
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100px;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  &__img {
+    margin-bottom: 1rem;
+  }
+}
+.footer__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34.22px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+.footer__img {
+    width: 122;
+    height: 39.444419860839844;
+    top: 66px;
+    left: 659px;
+    color: #FFFFFF;
+
 }

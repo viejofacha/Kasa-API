@@ -13,7 +13,7 @@
 * @param {React.Node} props.children - Le contenu à afficher dans le composant.
 */
 import PropTypes from "prop-types";
-
+import "../../layout/mainContent/mainContent.css"
 function MainContent({children}) {
     return <div className="main-content">{children}</div>;
   };

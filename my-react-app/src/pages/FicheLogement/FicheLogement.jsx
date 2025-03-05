@@ -1,30 +1,30 @@
 // FicheLogement.jsx
 // import React from 'react';
-// import { useEffect, useState } from "react";
-// import { useLocation } from "react-router-dom";
-// import Carousel from "../../components/carrousel/Carrousel.jsx";
-// import Tags from "../../components/tags/Tags.jsx";
-// import Rating from "../../components/rating/Ratting.jsx";
-// import Collapse from "../../components/Collapse/Collapse.jsx";
-// import { logementGetById } from "../../services/API.js";
-
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import Carousel from "../../components/carrousel/Carrousel.jsx";
+import Tags from "../../components/tags/Tags.jsx";
+import Rating from "../../components/rating/Ratting.jsx";
+import Collapse from "../../components/Collapse/Collapse.jsx";
+import { logementGetById } from "../../services/API.js";
+import "../../pages/FicheLogement/ficheLogement.css"
 function FicheLogement() {
-  // const location = useLocation();
-  // const [selectedById, setSelectedById] = useState(null);
+  const location = useLocation();
+  const [selectedById, setSelectedById] = useState(null);
 
   /** USEEFFET
   * `useEffect` est utilisé pour récupérer les détails du logement de l'API lors du rendu initial du composant.
   */
-  // useEffect(() => {
-  //     logementGetById(location.state.logementById)
-  //         .then(setSelectedById)
-  //         .catch(console.error);
-  // }, [location.state.logementById]);
+  useEffect(() => {
+      logementGetById(location.state.logementById)
+          .then(setSelectedById)
+          .catch(console.error);
+  }, [location.state.logementById]);
 
   return (
     <div>
        <div className="logement">
-                  {/* <Carousel slides={selectedById.pictures} />
+                  <Carousel slides={selectedById.pictures} />
       
                   <div className="logement__description">
                       <div className="logement__description__top">
@@ -57,9 +57,9 @@ function FicheLogement() {
                                       <li key={index}>{equip}</li>
                                   ))}
                               </ul>
-                          </Collapse> */}
-                      {/* </div>
-                  </div> */}
+                          </Collapse> 
+                      </div> 
+                  </div>
               </div>
     </div>
   );

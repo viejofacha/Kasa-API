@@ -1,4 +1,4 @@
-import BannerAbout from "../../components/bannerAbout/BannerAbout.jsx";
+import BannerAbout from "../../layout/bannerAbout/BannerAbout.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import aboutJson from "../../about.json";
 

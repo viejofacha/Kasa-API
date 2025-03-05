@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import "../../components/logementCard/logementCard.css"
 import PropTypes from "prop-types";
 
 const LogementsCards = ({ id, imageUrl, title }) => {

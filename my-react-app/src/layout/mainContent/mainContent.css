@@ -1,11 +1,14 @@
 .main-content {
-    border: 3px solid red;
-    margin: 0 auto;
-    max-width: 1240px;
-    margin-bottom: 1.25rem;
-    min-height: 60vh;
-    @media screen and (min-width: 375px) {
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
+  border: 3px solid red;
+  margin: 0 auto;
+  max-width: 1240px;
+  margin-bottom: 1.25rem;
+  min-height: 60vh;
+  height: 1095;
+  border-width: 1px;
+  border: 1px solid #000000;
+  @media screen and (min-width: 375px) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

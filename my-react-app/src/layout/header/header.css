@@ -1,56 +1,78 @@
-@import '../../utils/variables.scss';
+/* @import "../../utils/variables.scss"; */
 
 header {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1240px;
-    flex-direction: row;
-    width: 95%;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 0.93rem;
-    padding-bottom: 1.25rem;
-    padding-left: 1em;
-    padding-right: 1em;
-    img {
-        @media screen and (max-width: 768px) {
-            width: 7.5rem;
-        }
+  display: flex;
+  /* margin: 0 auto; */
+  /* max-width: 1240px; */
+  flex-direction: row;
+  width: 100%;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 0.93rem; */
+  padding-bottom: 1.25rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  img {
+    @media screen and (max-width: 768px) {
+      width: 7.5rem;
     }
-
-    /* navbar avec "Accueil & À propos" */
-    .navbar__links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.2em;
-        padding: 0;
-        @media screen and (max-width: 1024px) {
-            justify-content: space-around;
-        }
-        a {
-            text-decoration: none;
-            list-style: none;
-            
-            font-size: 1.5rem;
-            font-style: normal;
-            font-weight: 600;
-            margin-left: 3.12rem;
-            cursor: pointer;
-            @media screen and (max-width: 768px) {
-                font-size: 0.8rem;
-                text-transform: uppercase;
-                margin-left: 1.25rem;
-            }
-            /* Style du lien dans la navbar quand la page est "active" */
-            &.active {
-                color: Theme-color;
-                text-shadow: Text-active-link;
-            }
-            /* Style du lien dans la navbar quand un élément de la navbar est survolé */
-            &:hover {
-                text-decoration-line: underline;
-            }
-        }
-    }
+  }
 }
+  /* navbar avec "Accueil & À propos" */
+  .navbar__links {
+    /* width: 309;
+    height: 34; */
+    top: 17px;
+    left: 931px;
+    gap: 57px;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 1.2em;
+    padding: 0;
+    /* @media screen and (max-width: 1024px) {
+      justify-content: space-around;
+    } */
+  }
+    a {
+        /* font-family: Montserrat; */
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34.22px;
+        letter-spacing: 0%;
+        text-align: right;
+        /* text-decoration: underline; */
+        text-decoration-style: solid;
+        text-underline-offset: Auto;
+        text-decoration-thickness: Auto;
+        color: #000000;
+
+      /* text-decoration: none;
+      list-style: none;
+
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      margin-left: 3.12rem;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-left: 1.25rem; */
+      }
+    
+      /* Style du lien dans la navbar quand la page est "active" */
+      &.active {
+        color: Theme-color;
+        text-shadow: Text-active-link;
+        text-decoration-line: underline;
+      }
+      /* Style du lien dans la navbar quand un élément de la navbar est survolé */
+      /* &:hover {
+        text-decoration-line: underline;
+      } */
+  
+  

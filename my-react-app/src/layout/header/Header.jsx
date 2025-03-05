@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/LOGO.svg";
-
+import "../../layout/header/header.css"
 /** EXPLICATION DU COMPOSANT "Header" :
 * C'est un composant qui affiche l'en-tête du site.
 * 
