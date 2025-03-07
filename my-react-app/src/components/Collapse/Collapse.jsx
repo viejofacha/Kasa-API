@@ -1,80 +1,38 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-// import classNames from "classnames";
+import classNames from "classnames"; // Importamos classnames
 import arrowForCollapse from "../../assets/arrowForCollapse.svg";
+import "../../components/Collapse/collapse.css";
 
-/** EXPLICATION DU COMPOSANT "Collapse" :
-* C'est un composant qui affiche un panneau déroulant.
-* 
-* @component
-* @example
-* return (
-*   <Collapse title="Titre du panneau">
-*     <p>Contenu du panneau</p>
-*   </Collapse>
-* )
-* 
-* 
-* @param {string} props.title - Le titre du panneau déroulant.
-* @param {React.Node} props.children - Le contenu du panneau déroulant.
-*/
-// eslint-disable-next-line react-refresh/only-export-components
-const Collapse = ({title, children}) => {
-
-    /** VARIABLE D'ÉTAT :
-    * `isOpen` est une variable d'état qui représente si le panneau est ouvert ou non.
-    * `setIsOpen` est la fonction qui permet de mettre à jour `isOpen`.
-    */
+const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    /** GESTION DE L'OUVERTURE DU PANNEAU DÉROULANT :
-    * `handleFilterOpening` est une fonction qui inverse l'état d'ouverture du panneau.
-    */
     const handleFilterOpening = () => {
         setIsOpen(!isOpen);
     };
 
-    /** LES CLASSES DYNAMIQUES :
-    * `collapseClass`, `arrowClass` et `paragraphClass` sont des chaînes de caractères qui représentent les classes CSS dynamiques.
-    * Elles changent en fonction de l'état d'ouverture du panneau.
-    */
-    const collapseClass = ("collapse", { "open": isOpen });
-    const arrowClass = ("arrow", { "down": isOpen });
-    const paragraphClass = ("paragraph", { "animate": isOpen });
-
-    /** RENDU DU COMPOSANT :
-    * Le rendu du composant comprend un titre, une flèche pour ouvrir/fermer le panneau, et le contenu du panneau.
-    * Le composant est rendu avec différentes classes en fonction de l'état "isOpen". 
-    * Lorsque "isOpen" est vrai, la classe "open" est ajoutée à la div principale, 
-    * la classe "down" est ajoutée à l'image de la flèche, et la classe "animate" 
-    * est ajoutée à la div contenant la description.
-    */
     return (
-        <div className={collapseClass}>
+        <div className={classNames("collapse", { "open": isOpen })}>
             <div className="headCollapse" onClick={handleFilterOpening}>
                 <h3>{title}</h3>
                 <img 
-                src={arrowForCollapse} 
-                alt="Flèche pour le panneau déroulant"
-                className={arrowClass} />
+                    src={arrowForCollapse} 
+                    alt="Flèche pour le panneau déroulant"
+                    className={classNames("arrow", { "down": isOpen })}
+                />
             </div>
-            <div className={paragraphClass}>
-                {children}
-            </div>
+            {isOpen && (
+                <div className={classNames("paragraph", { "animate": isOpen })}>
+                    {children}
+                </div>
+            )}
         </div>
     );
 };
 
-/** VALIDATION DES PROPRIÉTÉS
-* Les propTypes définissent les types de props attendus par le composant Collapse.
-* 
-* `title` est une prop qui est nécessaire (`isRequired`) et doit être une chaîne de caractères (`string`).
-* `children` est une prop qui peut être n'importe quel élément React (`node`).
-*/
 Collapse.propTypes = {
-    title : PropTypes.string.isRequired,
-    children: PropTypes.element.isRequired,
-    description : PropTypes.node,
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
 };
 
 export default Collapse;

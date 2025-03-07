@@ -1,7 +1,8 @@
 :root {
-  /* width: 1440;
-height: 1517; */
-  /* position:sticky; */
+  
+  /* width: 1440px;  */
+  /* height: 1517px; */
+  position:sticky;
   top: -743px;
   left: -543px;
   padding-top: 45px;
@@ -33,6 +34,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   place-items: center;
   min-width: 320px;

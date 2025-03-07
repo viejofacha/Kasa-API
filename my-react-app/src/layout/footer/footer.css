@@ -1,10 +1,13 @@
 .footer {
-  display: flex;
-  width: 1440;
-  height: 209;
+   position: relative; 
+  /* display:flex ;
+  width: 1440px;
+  height: 209px; */ 
   background: #000000;
-  color: Text-color;
-  padding: 3rem;
+  width: 1440px;
+  height: 209px;
+  padding: 1px 0 0 0;
+  margin-top: 20px; 
   margin: 0 auto;
   max-width: 1440px;
   min-height: 100px;
@@ -26,8 +29,8 @@
 
 }
 .footer__img {
-    width: 122;
-    height: 39.444419860839844;
+    width: 122px;
+    height: 39.444419860839844px;
     top: 66px;
     left: 659px;
     color: #FFFFFF;

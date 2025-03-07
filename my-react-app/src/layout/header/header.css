@@ -1,11 +1,13 @@
 /* @import "../../utils/variables.scss"; */
 
 header {
+  position: relative;
   display: flex;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   /* max-width: 1240px; */
   flex-direction: row;
-  width: 100%;
+  width: 1240px;
+  left: 0px;
   align-content: flex-start;
   justify-content: space-between;
   align-items: center;

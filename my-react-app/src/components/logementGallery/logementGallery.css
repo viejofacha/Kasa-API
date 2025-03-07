@@ -1,8 +1,8 @@
 
 
 .logement-gallery {
-  /* width: 100%; */
-  /* height: 829; */
+  width: 100%;
+  height: 2750px;
   /* top: 429px;
   left: 100px; */
    background: #F6F6F6;
@@ -12,11 +12,12 @@
   border-radius: 1.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
   justify-items: center;
   align-items: center;
-  margin: 3em 0;
-  padding: 2.7em;
-  gap: 2em;
+  margin: 3em 0em 3em 0em;
+  padding: 2.7em 0em 2.7em 0em;
+  gap: 3em 0em;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;

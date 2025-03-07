@@ -1,5 +1,5 @@
 import ImgBannerHome from '../../assets/banner.png';
-
+import "../../layout/bannerHome/bannerHome.css"
 /** EXPLICATION DU COMPOSANT "BannerHome" :
 * C'est un composant qui affiche une bannière sur la page d'accueil.
 * 

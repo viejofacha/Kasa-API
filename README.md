@@ -6,7 +6,6 @@ You need Docker to launch the app API or you can use service installing nodejs o
 ## Launch Project
 
 With Docker run command
-
 **`docker-compose up -d`
 
 

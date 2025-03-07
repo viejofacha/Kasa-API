@@ -2,10 +2,12 @@ import "../../pages/HomePage/homePage.css";
 import "../../layout/mainContent/mainContent.css"
 import BannerHome from "../../layout/bannerHome/BannerHome.jsx";
 import Gallery from "../../components/logementGallery/LogementGallery.jsx";
-// import FicheLogement from "../../pages/FicheLogement/FicheLogement.jsx";
 import LogementGallery from "../../components/logementGallery/LogementGallery.jsx";
 import "../../components/logementGallery/logementGallery.css"
-// import LogementsCards from "../../components/logementCard/LogementsCard.jsx";
+// import Footer from "../../layout/footer/Footer.jsx";
+// import Header from "../../layout/header/Header.jsx";
+
+
 /** EXPLICATION DU COMPOSANT "HomePage" :
 * C'est un composant qui affiche la page d'accueil du site.
 * 
@@ -31,6 +33,7 @@ function HomePage() {
       <BannerHome />
       <Gallery path="logement/:id" element={<LogementGallery />} />
       </div>
+      
     </>
   );
 }

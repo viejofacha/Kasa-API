@@ -1,10 +1,28 @@
 .about {
-    gap: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1240px;
+  /* height: 600px; */
+  top: 0px;
+  left:100px;
+  padding-top: 40px;
+  gap: 38px;
+  min-height: 100vh;
+  flex: 1;
+  /* gap: 10px;
     padding-inline: 3rem;
     width: 100%;
-    margin: 0 auto;
-    .collapse {
-        width: 100%;
-    }
-   
+    margin: 0 auto; */
+  .collapse {
+    width: 100%;
+  }
+}
+.valeurs {
+  position: relative;
+  width: 1023px;
+  height: 298px;
+  top: 0px;
+  left: 100px;
+  gap: 30px;
 }
