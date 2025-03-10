@@ -2,7 +2,7 @@
 // import React from 'react';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import Carrousel from "../../components/carrousel/Carrousel.jsx";
+import Carrousel from "../../components/carrousel/Carrousel.jsx";
 import Tags from "../../components/tags/Tags.jsx";
 import Rating from "../../components/rating/Rating.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
@@ -26,6 +26,7 @@ function FicheLogement() {
   return (
     <div>
        <div className="logement">
+       {selectedById && (<Carrousel slides={selectedById?.pictures} />) }
                   {/* <Carrousel slides={selectedById?.pictures} /> */}
       
                   <div className="logement__description">

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+import "../../components/tags/tags.css"
 /** EXPLICATION DU COMPOSANT "Tags" :
 * C'est un composant qui affiche un texte sous forme de tag.
 * 

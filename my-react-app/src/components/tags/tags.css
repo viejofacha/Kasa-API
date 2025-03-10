@@ -1,12 +1,14 @@
 
 
 .tags {
+    position: relative;
+    top: 100px;
     display: flex;
     justify-content: center;
     align-content: center;
     width: fit-content;
     height: fit-content;
-    background: Theme-color;
+    background: #ff6060;
     color: white;
     border-radius: 10px;
     text-align: center;

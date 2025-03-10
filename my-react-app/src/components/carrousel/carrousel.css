@@ -1,22 +1,39 @@
-.carrousel {
-  width: 1240;
-  height: 415;
+.logement__carousel {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  top: 0px;
+  left: 0px;
+  border-radius: 25px;
 }
-.arrowRight {
-  width: 96;
-  height: 119.63;
-  top: 140.83px;
-  left: 1144px;
+.logement__carousel--slider {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  top: 0px;
+  left: 0px;
 }
-.arrowLeft {
-  width: 96;
-  height: 119.63;
-  top: 148.3px;
+.logement__carousel__arrowright {
+  position: relative;
+  width: 96px;
+  height: 119.63px;
+  top: -260px;
+  left: 1048px;
+  
 }
-.slideIndicator {
-  width: 24;
-  height: 32.402400970458984;
-  top: 357.67px;
+.logement__carousel__arrowleft {
+  position: relative;
+  width: 96px;
+  height: 119.63px;
+  top: -260px;
+  left: 0px;
+}
+.logement__carousel__slide-indicator {
+  position: relative;
+  width: 24px;
+  height: 32.4px;
+  top: -165px;
   left: 607px;
-  background: #ffffff;
+  color: #ffffff;
 }

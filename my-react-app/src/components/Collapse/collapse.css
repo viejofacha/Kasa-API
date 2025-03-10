@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: Theme-color;
     border-radius: 10px;
     overflow: hidden;
     z-index: 1;

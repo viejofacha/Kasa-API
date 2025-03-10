@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-// import classNames from "classnames"; // Importamos classnames
 import arrowForCollapse from "../../assets/arrowForCollapse.svg";
 import "../../components/Collapse/collapse.css";
 
