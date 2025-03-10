@@ -19,14 +19,14 @@ if (!window.fetch) {
     * @returns {Promise<Array>} Une promesse qui résout avec un tableau de logements.
     */
     async function logementsGetAll() {
-        try {
-            const response = await fetch("data.json");
-            return response.json();
-        } catch (error) {
-            console.error(error);
-        }
-    }
-    export { logementsGetAll };
+      try {
+        const response = await fetch("http://localhost:8080/api/properties");
+          return response.json();
+      } catch (error) {
+          console.error(error);
+      }
+  }
+  export { logementsGetAll };
 
     
 /*=============== GET BY ID ===============*/
@@ -40,9 +40,9 @@ if (!window.fetch) {
     */
     async function logementGetById(id) {
         try {
-            const response = await fetch("data.json");
+            const response = await fetch("http://localhost:8080/api/properties/"+ id);
             const logs = await response.json();
-            return logs.find((log) => log.id === id);
+            return logs  ;
         } catch (error) {
             console.error(error);
         }

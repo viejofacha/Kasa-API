@@ -15,12 +15,12 @@ header {
   padding-bottom: 1.25rem;
   padding-left: 1em;
   padding-right: 1em;
-  img {
+  /* img {
     @media screen and (max-width: 768px) {
       width: 7.5rem;
     }
-  }
-}
+  }*/
+} 
   /* navbar avec "Accueil & À propos" */
   .navbar__links {
     /* width: 309;

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import LogementCards from "../logementCard/LogementsCard.jsx";
+import LogementCard from "../logementCard/LogementCard.jsx";
 import { logementsGetAll } from "../../services/API.js";
 
 /** EXPLICATION DU COMPOSANT "LogementGallery" :
@@ -41,7 +41,7 @@ function LogementGallery() {
   return (
     <div className="logement-gallery">
       {logements.map((logement, logementCard) => (
-        <LogementCards title={logement.title} key={logementCard} imageUrl={logement.cover} id={logement.id} />
+        <LogementCard title={logement.title} key={logementCard} imageUrl={logement.cover} id={logement.id} />
       ))}
     </div>
   );
