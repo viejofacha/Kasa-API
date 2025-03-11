@@ -1,0 +1,47 @@
+.ErrorPage {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 1213px;
+  top: 2193px;
+  left: -543px;
+  padding-top: 40px;
+  gap: 139px;
+  background: #ffffff;
+}
+
+.img404 {
+  position: relative;
+  left: 360px;
+  top: 0px;
+  width: 597px;
+  height: 263px;
+}
+
+.ErrorPage-h1 {
+  position: relative;
+  left: 270px;
+  width: 785px;
+  height: 51px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 143%;
+  vertical-align: bottom;
+  color: #ff6060;
+}
+
+.ErrorPage-a {
+  position: relative;
+  left: 490px;
+  top: 135px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 143%;
+  letter-spacing: 0%;
+  vertical-align: bottom;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
