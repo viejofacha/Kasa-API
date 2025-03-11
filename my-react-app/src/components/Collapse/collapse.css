@@ -1,6 +1,5 @@
 .collapse {
- background: #F6F6F6;
- ;
+  background: #f6f6f6;
   border-radius: 10px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -48,7 +47,6 @@
     }
   }
   .paragraph {
-   
     border-radius: 10px;
     margin: 0;
     margin-bottom: 5px;

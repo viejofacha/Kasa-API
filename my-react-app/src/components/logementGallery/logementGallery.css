@@ -1,13 +1,8 @@
-
-
 .logement-gallery {
-  width: 100%;
-  height: 2750px;
-  /* top: 429px;
-  left: 100px; */
-   background: #F6F6F6;
-;
-  border: 3px solid #F6F6F6;
+  width: 1234px;
+  /* height: 2750px; */
+  background: #f6f6f6;
+  border: 3px solid #f6f6f6;
   min-height: 50vh;
   border-radius: 1.5rem;
   display: grid;
@@ -19,7 +14,18 @@
   padding: 2.7em 0em 2.7em 0em;
   gap: 3em 0em;
 
-  @media screen and (max-width: 1024px) {
+ 
+  }
+
+  
+
+  @media screen and (max-width: 768px) {
+    .logement-gallery{
+    position: relative;
+    left: -220px;
+    top: 50px;
+    width: 340px;
+    height: 100%;
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 1rem;
@@ -29,9 +35,5 @@
       /* Sélectionne tous les enfants directs */
       width: 100%; /* Largeur de l'élément enfant */
     }
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 1;
   }
 }

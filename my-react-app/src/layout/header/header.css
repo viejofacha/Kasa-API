@@ -1,80 +1,81 @@
-/* @import "../../utils/variables.scss"; */
-
 header {
   position: relative;
   display: flex;
-  margin: 0 auto;
-  /* max-width: 1240px; */
   flex-direction: row;
-  width: 1240px;
-  left: 0px;
-  align-content: flex-start;
+  left: -15px;
+  align-content: center;
   justify-content: space-between;
   align-items: center;
-  /* padding-top: 0.93rem; */
   padding-bottom: 1.25rem;
-  padding-left: 1em;
-  padding-right: 1em;
-  /* img {
-    @media screen and (max-width: 768px) {
-      width: 7.5rem;
-    }
-  }*/
-} 
-  /* navbar avec "Accueil & À propos" */
-  .navbar__links {
-    /* width: 309;
-    height: 34; */
-    top: 17px;
-    left: 931px;
-    gap: 57px;
+  background: white;
+}
 
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 1.2em;
-    padding: 0;
-    /* @media screen and (max-width: 1024px) {
-      justify-content: space-around;
-    } */
-  }
-    a {
-        /* font-family: Montserrat; */
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 34.22px;
-        letter-spacing: 0%;
-        text-align: right;
-        /* text-decoration: underline; */
-        text-decoration-style: solid;
-        text-underline-offset: Auto;
-        text-decoration-thickness: Auto;
-        color: #000000;
-
-      /* text-decoration: none;
-      list-style: none;
-
-      font-size: 1.5rem;
-      font-style: normal;
-      font-weight: 600;
-      margin-left: 3.12rem;
-      cursor: pointer;
-      @media screen and (max-width: 768px) {
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        margin-left: 1.25rem; */
-      }
-    
-      /* Style du lien dans la navbar quand la page est "active" */
-      &.active {
-        color: Theme-color;
-        text-shadow: Text-active-link;
-        text-decoration-line: underline;
-      }
-      /* Style du lien dans la navbar quand un élément de la navbar est survolé */
-      /* &:hover {
+.navbar__links {
+  top: 17px;
+  left: 931px;
+  gap: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 1.2em;
+  padding: 0;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34.22px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-decoration-style: solid;
+  text-underline-offset: Auto;
+  text-decoration-thickness: Auto;
+  color: #000000;
+}
+/* Style du lien dans la navbar quand la page est "active" */
+ .active {
+  text-decoration-line: underline;
+}
+/* Style du lien dans la navbar quand un élément de la navbar est survolé */
+/* &:hover {
         text-decoration-line: underline;
       } */
-  
-  
+
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+    left: 166px;
+    display: flex;
+    width: 400px;
+    height: 46.88px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    top: 0px;
+  }
+  .logo {
+    width: 145px;
+    height: 46.88px;
+  }
+  .navbar__links {
+    width: 190px;
+    height: 17px;
+    gap: 26px;
+  }
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 143%;
+    letter-spacing: 0%;
+    text-align: right;
+    vertical-align: bottom;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    
+  }
+}

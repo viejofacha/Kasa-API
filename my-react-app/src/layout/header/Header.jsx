@@ -19,7 +19,7 @@ function Header() {
     return (
         <header>
             <NavLink to={`/`}>
-                <img src={Logo} alt="Logo de Kasa" />
+                <img className="logo" src={Logo} alt="Logo de Kasa" />
             </NavLink>
 
             <nav className="navbar__links">

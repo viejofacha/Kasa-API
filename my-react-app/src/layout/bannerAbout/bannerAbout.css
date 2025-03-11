@@ -1,12 +1,10 @@
 .bannerAbout {
-  width: 1240px;
   height: 223px;
   top: -25px;
   left: 0px;
   position: relative;
   border-width: 1px;
   border-radius: 25px;
-  /* border: 1px solid #000000; */
 }
 .h1 {
   width: 225px;
