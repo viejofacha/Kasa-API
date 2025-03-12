@@ -2,11 +2,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 40px;
-  left:0px;
-  gap: 38px;
-  min-height: 100vh;
+  top: 0px;
+  left: 0px;
   flex: 1;
+  width: 1440px;
+  background: white;
   .collapse {
     width: 100%;
   }
@@ -14,7 +14,10 @@
 .valeurs {
   position: relative;
   width: 1023px;
-  top: 0px;
-  left: 100px;
-  gap: 30px;
+  top: 45px;
+  left: 220px;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
 }

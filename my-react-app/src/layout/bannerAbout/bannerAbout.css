@@ -1,7 +1,7 @@
 .bannerAbout {
   height: 223px;
-  top: -25px;
-  left: 0px;
+  top: 13px;
+  left: 110px;
   position: relative;
   border-width: 1px;
   border-radius: 25px;
@@ -30,7 +30,7 @@
   mix-blend-mode: Darken;
   background: #000000;
   /* border: 1px solid #000000; */
-  box-shadow: 0px 4px 4px 0px #00000040;
+  /* box-shadow: 0px 4px 4px 0px #00000040; */
 }
 .banner_background {
   width: 1240px;

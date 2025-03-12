@@ -31,7 +31,7 @@ function Header() {
 
                 <NavLink to={`/about`} className={({ isActive, isPending }) => 
                 isPending ? "pending" : isActive ? "active" : ""}>
-                    À propos
+                    A Propos
                 </NavLink>
             </nav>
 

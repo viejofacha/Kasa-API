@@ -1,9 +1,11 @@
 .home-container {
   position: relative;
-  border-radius: 25px;
+  width: 1440px;
+  /* border-radius: 25px; */
   left: 0px;
   gap: 50px;
   background: #ffffff;
+  height: 3170px;
 }
 
 .main-content {

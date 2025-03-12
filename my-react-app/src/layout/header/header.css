@@ -2,7 +2,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-  left: -15px;
+  left: 0px;
   align-content: center;
   justify-content: space-between;
   align-items: center;
