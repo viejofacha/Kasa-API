@@ -1,5 +1,6 @@
 header {
   position: relative;
+  top: 0px;
   display: flex;
   flex-direction: row;
   left: 0px;
@@ -45,25 +46,30 @@ a {
 @media screen and (max-width: 768px) {
   header {
     position: relative;
-    left: 166px;
+    left: -0px;
     display: flex;
-    width: 400px;
+    width: 335px;
     height: 46.88px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
     align-content: space-around;
     top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
   }
   .logo {
     width: 145px;
     height: 46.88px;
   }
   .navbar__links {
+    display: flex;
+    justify-content: flex-end;
     width: 190px;
     height: 17px;
-    gap: 26px;
+    gap: 50px;
   }
   a {
     font-family: Arial, Helvetica, sans-serif;

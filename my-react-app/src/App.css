@@ -1,12 +1,13 @@
 #root {
   display: flex;
   justify-content: center;
-  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  @media screen and (max-width: 768px) {
+    height: 9000px;
 }
-
+}
 .logo {
   height: 6em;
   padding: 1.5em;

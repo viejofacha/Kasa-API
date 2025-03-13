@@ -16,8 +16,28 @@
   width: 1023px;
   top: 45px;
   left: 220px;
-  gap: 25px;
+  gap: 0px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 623.88px;
+    top: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .valeurs{
+    position: relative;
+    width: 335px;
+    height: 111px;
+    /* top: 45px;
+  left: 220px; */
+  }
 }

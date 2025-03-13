@@ -32,7 +32,7 @@
 @media screen and (max-width: 768px) {
   .footer {
     position: relative;
-    top: 60px;
+    top: 0px;
     left: 0px;
     width: 375px;
     height: 209px;

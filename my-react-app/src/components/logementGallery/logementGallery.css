@@ -1,6 +1,5 @@
 .logement-gallery {
   width: 1234px;
-  /* height: 2750px; */
   background: #f6f6f6;
   border: 3px solid #f6f6f6;
   min-height: 50vh;
@@ -24,18 +23,14 @@
   @media screen and (max-width: 768px) {
     .logement-gallery{
     position: relative;
-    left: -220px;
-    top: 50px;
-    width: 340px;
+    left: -195px;
+    top: 30px;
+    width: 335px;
     height: 100%;
     grid-template-columns: 1fr;
     justify-items: center;
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: inherit; /* Suppression de la couleur d'arrière-plan */
-    > * {
-      /* Sélectionne tous les enfants directs */
-      width: 100%; /* Largeur de l'élément enfant */
-    }
+    background-color:transparent; /* Suppression de la couleur d'arrière-plan */
+    border: none;
+    gap: 20px;
   }
 }

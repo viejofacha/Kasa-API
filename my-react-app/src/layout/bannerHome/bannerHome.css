@@ -46,10 +46,10 @@ h1 {
 @media screen and (max-width: 768px) {
   .banner {
     position: relative;
-    width: 410px;
+    width: 335px;
     height: 111px;
-    top: -4190px;
-    left: 200px;
+    top: -4242px;
+    left: 194px;
     border-radius: 10px;
   }
   h1 {
@@ -66,7 +66,7 @@ h1 {
   }
   .imgBanner {
     position: relative;
-    width: 410px;
+    width: 335px;
     height: 111px;
     border-radius: 10px;
     top: 0px;
