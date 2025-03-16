@@ -38,3 +38,44 @@
   left: 607px;
   color: #ffffff;
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+.logement__carousel {
+  position: relative;
+  width: 335px;
+  height: 255px;
+  top: 15px;
+  left: 0px;
+  border-radius: 25px;
+}
+.logement__carousel--slider {
+  object-fit: cover;
+  position: relative;
+  width: 335px;
+  height: 255px;
+  border-radius: 25px;
+  top: 0px;
+  left: 0px;
+}
+.logement__carousel__arrowright {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: -140px;
+  left: 287px;
+  
+}
+.logement__carousel__arrowleft {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  top: -140px;
+  left: 0px;
+}
+.logement__carousel__slide-indicator {
+  display: none;
+}
+}

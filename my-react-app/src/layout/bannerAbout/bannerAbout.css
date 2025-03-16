@@ -1,4 +1,6 @@
 .bannerAbout {
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   top: 0px;
   left: 110px;
@@ -19,7 +21,8 @@
   background: #ffffff;
 }
 .imgBannerAbout {
-  width: 1240px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   top: 0px;
   left: 0px;
@@ -31,7 +34,8 @@
   background: #000000;
 }
 .banner_background {
-  width: 1240px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   position: relative;
   opacity: 0.3;
@@ -44,8 +48,8 @@
 @media screen and (max-width: 768px){
   .bannerAbout {
     width: 335px;
-    height: 111px;
-    top: -160px;
+    /* height: 111px; */
+    top:0px;
     left: 0px;
     position: relative;
     border-width: 1px;

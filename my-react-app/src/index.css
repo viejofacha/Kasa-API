@@ -1,8 +1,10 @@
 :root {
+  box-sizing: content-box;
   top: -743px;
   left: -543px;
   gap: 50px;
-  width: 100%;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -25,14 +27,21 @@ a:hover {
 }
 
 body {
+  box-sizing: content-box;
+  position: relative;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* background: black; */
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  left: 240px;
 }
 header {
   display: flex;
@@ -68,7 +77,8 @@ h1 {
   box-shadow: 0px 4px 4px 0px #f6f6f6;
 }
 .imgBanner {
-  width: 1240;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223;
   top: 163px;
   left: 100px;
@@ -78,7 +88,8 @@ h1 {
   box-shadow: 0px 4px 4px 0px #f6f6f6;
 }
 .banner_background {
-  width: 1240;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223;
   opacity: 60%;
   top: 146px;
@@ -120,5 +131,15 @@ footer {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+@media screen and (max-width: 768px){
+  :root {
+    width: 375px;
+    
+  }
+  body {
+    width: 375px;
+   
   }
 }

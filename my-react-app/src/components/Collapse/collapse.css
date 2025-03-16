@@ -3,8 +3,8 @@
   border-radius: 5px;
   margin-bottom: 10px;
   overflow: hidden;
-  max-width: 1240px;
-  width: 85%;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
 }
 .headCollapse {
   background: #ff6060;
@@ -67,9 +67,9 @@
 @media screen and (max-width: 768px) {
   .collapse {
     width: 335px;
-    height: 180px;
     gap: 20px;
   }
+ 
   .headCollapse {
     background: #ff6060;
     position: relative;

@@ -21,7 +21,7 @@ const AboutPage = () => {
    * Chaque `Collapse` a un titre et un texte qui sont tirés de `aboutJson`.
    */
   return (
-    <div>
+    <>
       
       <div className="about">
       <BannerAbout />
@@ -36,7 +36,7 @@ const AboutPage = () => {
         </div> 
         
       </div>
-    </div> 
+    </> 
   );
 };
 

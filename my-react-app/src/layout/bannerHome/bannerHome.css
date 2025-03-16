@@ -1,6 +1,7 @@
 .banner {
   position: relative;
-  width: 1240px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   top: 15px;
   left: 100px;
@@ -25,13 +26,15 @@ h1 {
 }
 .imgBanner {
   position: relative;
-  width: 1272px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   top: 0px;
   left: 0px;
 }
 .banner_background {
-  width: 1272px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   height: 223px;
   opacity: 60%;
   top: 146px;
@@ -45,13 +48,13 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .banner {
-    position: relative;
+    position: absolute;
     width: 335px;
     height: 111px;
-    top: -4242px;
-    left: 194px;
+    top: 0px;
+    left: 20px;
     border-radius: 10px;
-  }
+  
   h1 {
     width: 210px;
     height: 48px;
@@ -63,7 +66,7 @@ h1 {
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: bottom;
-  }
+  };
   .imgBanner {
     position: relative;
     width: 335px;
@@ -72,4 +75,5 @@ h1 {
     top: 0px;
     left: 0px;
   }
+};
 }

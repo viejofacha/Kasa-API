@@ -1,5 +1,6 @@
 .logement-gallery {
-  width: 1234px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
   background: #f6f6f6;
   border: 3px solid #f6f6f6;
   min-height: 50vh;
@@ -23,14 +24,14 @@
   @media screen and (max-width: 768px) {
     .logement-gallery{
     position: relative;
-    left: -195px;
-    top: 30px;
+    left: 0px;
+    top: 85px;
     width: 335px;
     height: 100%;
     grid-template-columns: 1fr;
     justify-items: center;
     background-color:transparent; /* Suppression de la couleur d'arrière-plan */
     border: none;
-    gap: 20px;
+    gap: 25px;
   }
 }

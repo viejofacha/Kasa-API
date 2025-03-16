@@ -1,8 +1,9 @@
 .ErrorPage {
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  height: 1213px;
+  width: clamp(335px, 70vw, 1240px);
+  transition: width 0.5s ease-in-out;
+  height: 700px;
   top: 2193px;
   left: -543px;
   padding-top: 40px;
@@ -14,7 +15,8 @@
   position: relative;
   left: 360px;
   top: 0px;
-  width: 597px;
+  width: clamp(198px, 30vw, 597px);
+  transition: width 0.5s ease-in-out;
   height: 263px;
 }
 
@@ -44,4 +46,33 @@
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 0%;
+}
+@media screen and (max-width: 768px) {
+  .ErrorPage {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    width: 335px;
+    height: 500px;
+  }
+
+  .img404 {
+    width: 198px;
+    height: 103px;
+    position: relative;
+    left: 25px;
+  }
+  .ErrorPage-h1 {
+    width: 260px;
+    height: 52px;
+    font-size: 18px;
+    position: relative;
+    left: 25px;
+    font-size: 18px;
+  }
+  .ErrorPage-a {
+    font-size: 14px;
+    position: relative;
+    left: 45px;
+  }
 }

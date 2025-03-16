@@ -37,9 +37,13 @@
     width: 375px;
     height: 209px;
   }
-}
-.footer__text{
-  position: relative;
-  top: -50px;
-  color: #ffffff;
+
+  .footer__text {
+    width: 133.59px;
+    height: 46px;
+    font-size: 12px;
+    position: relative;
+    top: -50px;
+    color: #ffffff;
+  }
 }
