@@ -3,7 +3,7 @@
   top: -743px;
   left: -543px;
   gap: 50px;
-  width: clamp(335px, 70vw, 1240px);
+  /* width: clamp(335px, 70vw, 1240px); */
   transition: width 0.5s ease-in-out;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -29,7 +29,7 @@ a:hover {
 body {
   box-sizing: content-box;
   position: relative;
-  /* width: clamp(335px, 70vw, 1240px); */
+  width: clamp(335px, 70vw, 1240px);
   transition: width 0.5s ease-in-out;
   margin: 0;
   display: flex;
@@ -37,7 +37,6 @@ body {
   justify-content: space-around;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
@@ -136,10 +135,8 @@ footer {
 @media screen and (max-width: 768px){
   :root {
     width: 375px;
-    
-  }
+   }
   body {
     width: 100%;
-   
-  }
+   }
 }

@@ -24,22 +24,22 @@
   padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    width: 375px;
-    top: 0px;
-    left: 0px;
-    flex-wrap: wrap;
-    align-content: center;
+  .about{
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  top: -25px;
+  left: 20px;
+  flex-wrap: nowrap;
+  align-content: center;
   }
   .valeurs {
     position: relative;
     width: 335px;
     left: 0px;
-    top: -75px;
+    top: 15px;
     padding-bottom: 0px;
-    gap: 25px;
+    gap: 15px;
   }
   
 } 
