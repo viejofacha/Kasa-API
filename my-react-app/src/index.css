@@ -29,7 +29,7 @@ a:hover {
 body {
   box-sizing: content-box;
   position: relative;
-  width: clamp(335px, 70vw, 1240px);
+  /* width: clamp(335px, 70vw, 1240px); */
   transition: width 0.5s ease-in-out;
   margin: 0;
   display: flex;
@@ -139,7 +139,7 @@ footer {
     
   }
   body {
-    width: 375px;
+    width: 100%;
    
   }
 }
