@@ -45,6 +45,7 @@ if (!window.fetch) {
             return logs  ;
         } catch (error) {
             console.error(error);
+            return error
         }
     }
     export { logementGetById };

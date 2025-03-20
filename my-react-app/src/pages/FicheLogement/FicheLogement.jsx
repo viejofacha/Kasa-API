@@ -1,7 +1,7 @@
 // FicheLogement.jsx
 // import React from 'react';
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel.jsx";
 import Tags from "../../components/tags/Tags.jsx";
 import Rating from "../../components/rating/Rating.jsx";
@@ -12,16 +12,24 @@ function FicheLogement() {
 //   const location = useLocation();
   const {id} = useParams();
   const [selectedById, setSelectedById] = useState(null);
-
+const navigate = useNavigate()
   /** USEEFFET
   * `useEffect` est utilisé pour récupérer les détails du logement de l'API lors du rendu initial du composant.
   */
   useEffect(() => {
     // console.log(location.state.logementById)
       logementGetById(id)
-          .then(setSelectedById)
+          .then((data)=>{
+            console.log(data)
+            if (data==="Not found"){
+navigate("/error")
+return
+            }
+            setSelectedById(data)
+          })
           .catch(console.error);
-  }, [id]);
+        //   console.log (selectedById)
+  }, [id,navigate]);
 
   return (
     <div>
