@@ -1,6 +1,5 @@
-import React, { useState } from 'react';// eslint-disable-line no-unused-vars
-
-
+import { useState } from "react"; 
+import React from 'react'; // eslint-disable-line no-unused-vars
 import PropTypes from "prop-types";
 import arrowForCollapse from "../../assets/arrowForCollapse.svg";
 import "../../components/Collapse/collapse.css";

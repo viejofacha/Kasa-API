@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import ImgBannerHome from '../../assets/banner.png';
 import "../../layout/bannerHome/bannerHome.css"
 /** EXPLICATION DU COMPOSANT "BannerHome" :

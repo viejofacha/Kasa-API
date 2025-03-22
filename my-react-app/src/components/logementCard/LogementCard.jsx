@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import { Link } from "react-router-dom";
 import "../../components/logementCard/logementCard.css"
 import PropTypes from "prop-types";

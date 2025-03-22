@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import PropTypes from "prop-types";
 import "../../components/tags/tags.css"
 /** EXPLICATION DU COMPOSANT "Tags" :

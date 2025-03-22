@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import "../../pages/HomePage/homePage.css";
 import "../../layout/mainContent/mainContent.css"
 import BannerHome from "../../layout/bannerHome/BannerHome.jsx";

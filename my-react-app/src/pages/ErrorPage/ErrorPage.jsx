@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import ImageError from "../../assets/404.svg"
 import "../../pages/ErrorPage/errorPage.css"
 export default function ErrorPage() {

@@ -1,5 +1,5 @@
 // FicheLogement.jsx
-// import React from 'react';
+import React from 'react'; // eslint-disable-line no-unused-vars
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Carrousel from "../../components/carrousel/Carrousel.jsx";

@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./layout/header/Header.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";

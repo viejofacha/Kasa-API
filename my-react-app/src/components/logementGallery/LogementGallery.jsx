@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import { useEffect, useState } from "react";
 import LogementCard from "../logementCard/LogementCard.jsx";
 import { logementsGetAll } from "../../services/API.js";

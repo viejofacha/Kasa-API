@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
 import arrowleft from "../../assets/arrowleft.svg";

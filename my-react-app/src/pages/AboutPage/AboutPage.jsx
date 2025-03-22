@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import BannerAbout from "../../layout/bannerAbout/BannerAbout.jsx";
 import "../../layout/bannerAbout/bannerAbout.css";
 import Collapse from "../../components/Collapse/Collapse.jsx";

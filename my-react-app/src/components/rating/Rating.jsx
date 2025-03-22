@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import PropTypes from "prop-types";
 import starActiveSvg from "../../assets/starActive.svg";
 import starInactiveSvg from "../../assets/starInactive.svg";

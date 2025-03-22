@@ -1,3 +1,4 @@
+import React from 'react'; // eslint-disable-line no-unused-vars
 import ImgBannerAbout from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
 
 /** EXPLICATION DU COMPOSANT "BannerAbout" :

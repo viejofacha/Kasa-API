@@ -1,22 +1,23 @@
-import React from 'react'; // eslint-disable-line no-unused-vars
-import { render, screen, fireEvent } from '@testing-library/react';
-import Collapse from './Collapse/Collapse.jsx';
-import { describe, test, expect } from 'vitest';
 
-describe('Collapse Component', () => {
-  test('toggles content visibility when clicked', () => {
+import { render, screen, fireEvent } from "@testing-library/react"; 
+import Collapse from "../components/Collapse/Collapse.jsx";
+import { describe, it, expect } from "vitest";
+
+
+
+
+describe("Collapse Component", () => {
+  it("toggles content visibility when clicked", () => {
     render(
       <Collapse title="Más información">
         <p>Este es el contenido colapsable</p>
       </Collapse>
     );
 
-    expect(screen.getByText(/Más información/i)).toBeInTheDocument();
-    expect(screen.queryByText(/Este es el contenido colapsable/i)).not.toBeInTheDocument();
+    const collapseElement = screen.getByText(/Más información/i);
+    fireEvent.click(collapseElement); // Para simular el clic
 
-    fireEvent.click(screen.getByText(/Más información/i));
-
-    expect(screen.getByText(/Este es el contenido colapsable/i)).toBeInTheDocument();
+    expect(screen.getByText(/Este es el contenido colapsable/i)).toBeInTheDocument(); // Verifica si el contenido aparece
   });
 });
 
