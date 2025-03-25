@@ -16,7 +16,7 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: '19.0' } },  // 🔹 Asegura la versión de React correcta
+    settings: { react: { version: '19.0' } },  // 🔹 Assurez-vous de la bonne version de React
     plugins: {
       react,
       'react-hooks': reactHooks,

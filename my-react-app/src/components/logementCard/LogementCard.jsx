@@ -12,7 +12,7 @@ const LogementCard = ({ id, imageUrl, title }) => {
   );
 };
 
-// Validación de props
+// Validatión des props
 LogementCard.propTypes = {
   id: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,

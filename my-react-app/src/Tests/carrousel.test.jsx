@@ -1,5 +1,5 @@
 // src/components/Carrousel.test.jsx
-import React from 'react'; // eslint-disable-line no-unused-vars
+
 
 import { render, screen, fireEvent } from "@testing-library/react";
 import Carrousel from "../components/carrousel/Carrousel.jsx";
@@ -7,7 +7,7 @@ import { describe, test, expect } from 'vitest';
 describe("Carrousel Component", () => {
   const images = ["/img/1.jpg", "/img/2.jpg", "/img/3.jpg"];
 
-  test("muestra la primera imagen al renderizar", () => {
+  test("affiche la première image lors du rendu", () => {
     render(<Carrousel slides={images} />);
     const img = screen.getByRole("img", { name: /slide 1/i });
     expect(img).toHaveAttribute("src", images[0]);
@@ -16,7 +16,7 @@ describe("Carrousel Component", () => {
     expect(indicator).toBeInTheDocument();
   });
 
-  test("navega a la siguiente imagen al hacer clic en la flecha derecha", () => {
+  test("accédez à l'image suivante en cliquant sur la flèche droite", () => {
     render(<Carrousel slides={images} />);
     const rightArrow = screen.getByAltText(/flèche de droite/i);
     fireEvent.click(rightArrow);
@@ -28,7 +28,7 @@ describe("Carrousel Component", () => {
     expect(indicator).toBeInTheDocument();
   });
 
-  test("navega a la imagen anterior al hacer clic en la flecha izquierda", () => {
+  test("accédez à l'image précédente en cliquant sur la flèche gauche", () => {
     render(<Carrousel slides={images} />);
     const leftArrow = screen.getByAltText(/flèche de gauche/i);
     fireEvent.click(leftArrow);

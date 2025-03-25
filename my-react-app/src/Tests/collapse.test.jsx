@@ -9,15 +9,15 @@ import { describe, it, expect } from "vitest";
 describe("Collapse Component", () => {
   it("toggles content visibility when clicked", () => {
     render(
-      <Collapse title="Más información">
-        <p>Este es el contenido colapsable</p>
+      <Collapse title="Plus d'informations">
+        <p>Ceci est le contenu pliable</p>
       </Collapse>
     );
 
-    const collapseElement = screen.getByText(/Más información/i);
-    fireEvent.click(collapseElement); // Para simular el clic
+    const collapseElement = screen.getByText(/Plus d'informations/i);
+    fireEvent.click(collapseElement); // Pour simuler le clic
 
-    expect(screen.getByText(/Este es el contenido colapsable/i)).toBeInTheDocument(); // Verifica si el contenido aparece
+    expect(screen.getByText(/Ceci est le contenu pliable/i)).toBeInTheDocument(); // Vérifiez si le contenu apparaît
   });
 });
 

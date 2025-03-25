@@ -3,7 +3,6 @@
   top: -743px;
   left: -543px;
   gap: 50px;
-  /* width: clamp(335px, 70vw, 1240px); */
   transition: width 0.5s ease-in-out;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
