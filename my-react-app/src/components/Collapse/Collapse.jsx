@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import arrowForCollapse from "../../assets/arrowForCollapse.svg";
 import "../../components/Collapse/collapse.css";
 
+// Composant Collapse: affiche le contenu pliable lorsque l'on clique sur le titre
 
 const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);

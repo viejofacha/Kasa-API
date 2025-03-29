@@ -5,22 +5,13 @@ import Collapse from "../../components/Collapse/Collapse.jsx";
 import aboutJson from "../../about.json";
 import "../../pages/AboutPage/aboutPage.css";
 import "../../layout/header/header.css"
-// import Footer from "../../layout/footer/Footer.jsx";
-/** EXPLICATION DU COMPOSANT "AboutPage" :
- * C'est un composant qui affiche la page À propos.
- *
- * @component
- * @example
- * return (
- *   <AboutPage />
- * )
- */
-const AboutPage = () => {
-  /** RENDU DU COMPOSANT :
-   * Le rendu du composant comprend une bannière et une liste de composants `Collapse`,
-   * un pour chaque élément dans `aboutJson`.
-   * Chaque `Collapse` a un titre et un texte qui sont tirés de `aboutJson`.
-   */
+
+// Composant AboutPage: affiche la page «À propos» avec des bannières et des éléments pliables
+  //  * Le rendu du composant comprend une bannière et une liste de composants `Collapse`,
+  //  * un pour chaque élément dans `aboutJson`.
+  //  * Chaque `Collapse` a un titre et un texte qui sont tirés de `aboutJson`.
+  //  */
+  const AboutPage = () => {
   return (
     <>
       

@@ -1,18 +1,7 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import PropTypes from "prop-types";
 import "../../components/tags/tags.css"
-/** EXPLICATION DU COMPOSANT "Tags" :
-* C'est un composant qui affiche un texte sous forme de tag.
-* 
-* @component
-* @example
-* return (
-*   <Tags text="Tag" />
-* )
-* 
-* @param {Object} props - Les propriétés passées au composant.
-* @param {string} props.text - Le texte à afficher dans le tag.
-*/
+// * C'est un composant qui affiche un texte sous forme de tag.
 function Tags({text}) {
     return <p className="tags">{text}</p>;
 };

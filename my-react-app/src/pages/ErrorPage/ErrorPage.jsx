@@ -1,6 +1,9 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ImageError from "../../assets/404.svg"
 import "../../pages/ErrorPage/errorPage.css"
+
+// Composant ErrorPage: affiche la page d'erreur 404 avec la possibilité de revenir HomePage
+
 export default function ErrorPage() {
   return (
     <div className= "ErrorPage">

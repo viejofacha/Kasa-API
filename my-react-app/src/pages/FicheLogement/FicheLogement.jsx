@@ -8,16 +8,17 @@ import Rating from "../../components/rating/Rating.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import { logementGetById } from "../../services/API.js";
 import "../../pages/FicheLogement/ficheLogement.css"
+
+// Composant FicheLogement: affiche les détails d'un logement sélectionné par identifiant
+
 function FicheLogement() {
-//   const location = useLocation();
   const {id} = useParams();
   const [selectedById, setSelectedById] = useState(null);
 const navigate = useNavigate()
-  /** USEEFFET
-  * `useEffect` est utilisé pour récupérer les détails du logement de l'API lors du rendu initial du composant.
-  */
+  
+//   * `useEffect` est utilisé pour récupérer les détails du logement de l'API lors du rendu initial du composant.
+//   */
   useEffect(() => {
-    // console.log(location.state.logementById)
       logementGetById(id)
           .then((data)=>{
             console.log(data)
@@ -28,7 +29,6 @@ return
             setSelectedById(data)
           })
           .catch(console.error);
-        //   console.log (selectedById)
   }, [id,navigate]);
 
   return (

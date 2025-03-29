@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../../components/logementCard/logementCard.css"
 import PropTypes from "prop-types";
 
+// Composant LogementCard : carte de visite pour un logement individuel
+
 const LogementCard = ({ id, imageUrl, title }) => {
   return (
     <Link className="logement-card" to={'/logement/'+ id}>

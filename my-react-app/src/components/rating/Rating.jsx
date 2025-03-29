@@ -3,22 +3,13 @@ import PropTypes from "prop-types";
 import starActiveSvg from "../../assets/starActive.svg";
 import starInactiveSvg from "../../assets/starInactive.svg";
 
-/** EXPLICATION DU COMPOSANT "Rating" :
-* C'est un composant qui affiche une évaluation sous forme d'étoiles.
-* 
-* @component
-* @example
-* return (
-*   <Rating rating={4} />
-* )
-* 
-* @param {Object} props - Les propriétés passées au composant.
-* @param {number} props.rating - L'évaluation à afficher, de 1 à 5.
-*/
+
+// * C'est un composant qui affiche une évaluation sous forme d'étoiles.
+
 const Rating = ({rating}) => {
-    /** CONSTANTES DE LA NOTATION DU LOGEMENT :
-    * `fullRating` est une constante qui représente le nombre maximum d'étoiles qui peut-être affiché.
-    */
+    
+    // * `fullRating` est une constante qui représente le nombre maximum d'étoiles qui peut-être affiché.
+    // */
     const fullRating = 5;
 
     /**
