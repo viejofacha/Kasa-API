@@ -1,7 +1,7 @@
 .ErrorPage {
   display: flex;
   flex-direction: column;
-  width: clamp(335px, 70vw, 1240px);
+  width: clamp(335px, 70vw, 1440px);
   transition: width 0.5s ease-in-out;
   height: 700px;
   top: 2193px;
