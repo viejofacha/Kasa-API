@@ -1,6 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
-import BannerAbout from "../../layout/bannerAbout/BannerAbout.jsx";
-import "../../layout/bannerAbout/bannerAbout.css";
+import BannerAbout from "../../components/bannerAbout/BannerAbout.jsx";
+import "../../components/bannerAbout/bannerAbout.css";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import aboutJson from "../../about.json";
 import "../../pages/AboutPage/aboutPage.css";
