@@ -1,6 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ImgBannerAbout from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
-
+import "../../components/bannerAbout/bannerAbout.css"
 // Composant BannerAbout: affiche l'image d'arrière-plan de la section «À propos»
 
 function BannerAbout() {

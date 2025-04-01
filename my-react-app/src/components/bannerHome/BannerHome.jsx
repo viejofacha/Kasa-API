@@ -1,6 +1,6 @@
 import React from 'react'; // eslint-disable-line no-unused-vars
 import ImgBannerHome from '../../assets/banner.png';
-import "../../layout/bannerHome/bannerHome.css"
+import "../../components/bannerHome/bannerHome.css"
 // Composant BannerHome: affiche l'image d'arrière-plan et le titre principal sur la page d'accueil
 function BannerHome() {
   return (
