@@ -115,12 +115,13 @@ h3 {
     flex-direction: column;
   }
   .logement__description__top--block-tags {
-    width: 84px;
+   
     position: relative;
     top: -50px;
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 5px;
+    
   }
   .logement__description__top--host-block {
     position: relative;
@@ -147,9 +148,11 @@ h3 {
     font-size: 10px;
   }
   .tags{
-    width: 84px;
+    width: 85px;
     height: 18px;
     font-size: 10px;
+    padding: 6px 10px;
+    align-items: center;
   }
   .logement__description--bottom {
     width: 335px;
